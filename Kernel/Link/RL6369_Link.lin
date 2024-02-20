@@ -1,0 +1,16 @@
+;;==============================================
+;; Global setting
+;;==============================================
+XDATA(0XE000-0XEFFF)
+
+;;==============================================
+;; Kernel autolink setting
+;;==============================================
+;@INCLUDE("Scaler_Link.lin")
+
+; Digital Signature Setting
+;@if(_CODE_DIGITAL_SIGNATURE_SUPPORT == _SIGNATURE_TYPE_EXTERNAL)
+    ;@BANK5(USERCOMMONSIGNKEYTABLE)
+    ;@TABLE(?CO?USERCOMMONSIGNKEYTABLE, 0xF000)
+    ;@OVERLAY(* ! ?CO?USERCOMMONSIGNKEYTABLE)
+;@endif

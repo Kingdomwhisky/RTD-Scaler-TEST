@@ -1,0 +1,29 @@
+;;==============================================
+;; Global setting
+;;==============================================
+XDATA(0XE000-0XE5FF)
+
+;;==============================================
+;; Kernel autolink setting
+;;==============================================
+;@INCLUDE("Scaler_Link.lin")
+;@COMM_SEG(?PR?SCALERMCUMEMORYZEROINIT?RL6463_SERIES_MCU)
+
+;@if(_FLASH_PARTITION_TYPE != _FLASH_PARTITION_USER)
+    ; PC99 EDID settings
+    ;@BANK0(RL6463_SERIES_PC99EDID)
+    ;@if((_A0_EMBEDDED_DDCRAM_LOCATION == _EDID_TABLE_LOCATION_PC99) || (_D0_EMBEDDED_DDCRAM_LOCATION == _EDID_TABLE_LOCATION_PC99) || (_D1_EMBEDDED_DDCRAM_LOCATION == _EDID_TABLE_LOCATION_PC99))
+    ;@TABLE(?CO?RL6463_SERIES_PC99EDID, 0xF000)
+    ;@else
+    ;@TABLE(?CO?RL6463_SERIES_PC99EDID, 0xFD70)
+    ;@endif
+    ;@OVERLAY(* ! ?CO?RL6463_SERIES_PC99EDID)
+;@endif
+
+; Digital Signature Setting
+;@if(_CODE_DIGITAL_SIGNATURE_SUPPORT == _SIGNATURE_TYPE_EXTERNAL)
+    ;@BANK5(USERCOMMONSIGNKEYTABLE)
+    ;@TABLE(?CO?USERCOMMONSIGNKEYTABLE, 0xF000)
+    ;@OVERLAY(* ! ?CO?USERCOMMONSIGNKEYTABLE)
+;@endif
+

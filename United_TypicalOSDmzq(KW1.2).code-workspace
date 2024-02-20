@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"rl6449_pcb_example_216_pin.h": "c"
+		}
+	}
+}

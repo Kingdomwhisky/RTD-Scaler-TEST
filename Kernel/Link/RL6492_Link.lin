@@ -1,0 +1,41 @@
+;;==============================================
+;; Glbaol setting
+;;==============================================
+XDATA(0XD700-0XFCFF)
+
+;;==============================================
+;; Kernel autolink setting
+;;==============================================
+;@INCLUDE("Scaler_Link.lin")
+
+; for EQC settings
+;;@COMMON(RL6492_Series_QC_Common)
+
+;@if(_FLASH_PARTITION_TYPE != _FLASH_PARTITION_USER)
+    ; Flash mode settings
+    ;@BANK0(RL6492_Series_FlashMode)
+    ;@TABLE(?CO?RL6492_Series_FlashMode, 0x7000)
+    ;@OVERLAY(* ! ?CO?RL6492_Series_FlashMode)
+;@endif
+
+; for digital signature appliation
+;@if(_CODE_DIGITAL_SIGNATURE_SUPPORT != _SIGNATURE_TYPE_OFF)
+   ;@if(_CODE_DIGITAL_SIGNATURE_SUPPORT == _SIGNATURE_TYPE_EXTERNAL)
+      ;@BANK5(USERCOMMONSIGNKEYTABLE)
+      ;@TABLE(?CO?USERCOMMONSIGNKEYTABLE, 0xF000)
+      ;@OVERLAY(* ! ?CO?USERCOMMONSIGNKEYTABLE)
+   ;@elif(_CODE_DIGITAL_SIGNATURE_SUPPORT == _SIGNATURE_TYPE_INTERNAL)
+      ;@if(_FLASH_PARTITION_TYPE == _FLASH_PARTITION_BOOT)
+         ;@BANK0(SYSMAIN)
+         ;@FUNC(?PR?SYSMAINSTARTUSERCODE?SYSMAIN, 0x4000)
+         ;@BANK_LIMIT(_SIGNATURE_INTERNAL_ISP_START_BANK)
+      ;@elif(_FLASH_PARTITION_TYPE == _FLASH_PARTITION_USER)
+         ;@BANK0(SYSMAIN)
+         ;@FUNC(?PR?SYSMAINSTARTUSERCODE?SYSMAIN, 0x4000)
+         ;@BANK_LIMIT(_SIGNATURE_INTERNAL_BIN_BANK_SIZE)
+         ;@BANKX(_SIGNATURE_INTERNAL_BIN_BANK_SIZE - 1, USERCOMMONSIGNKEYTABLE)
+         ;@TABLE(?CO?USERCOMMONSIGNKEYTABLE, 0xC000)
+         ;@OVERLAY(* ! ?CO?USERCOMMONSIGNKEYTABLE)
+      ;@endif
+   ;@endif
+;@endif

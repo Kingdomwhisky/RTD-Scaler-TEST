@@ -1,0 +1,9 @@
+---- _USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD Matches (8 in 3 files) ----
+BeaconKey.c (user\beacon series\beaconosd\code):                            ScalerTimerActiveTimerEvent(SEC(3), _USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD);
+BeaconKey.c (user\beacon series\beaconosd\code):                    ScalerTimerActiveTimerEvent(SEC(2), _USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD);
+BeaconKey.c (user\beacon series\beaconosd\code):        ScalerTimerCancelTimerEvent(_USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD);
+BeaconKey.c (user\beacon series\beaconosd\code):        ScalerTimerCancelTimerEvent(_USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD);
+BeaconTimerEventIDUser.h (user\beacon series\beaconosd\header):    _USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD,
+BeaconUserInterface.c (user\beacon series\beaconfunction\code):            case _USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD:
+BeaconUserInterface.c (user\beacon series\beaconfunction\code):    ScalerTimerCancelTimerEvent(_USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD);
+BeaconUserInterface.c (user\beacon series\beaconfunction\code):    ScalerTimerCancelTimerEvent(_USER_TIMER_EVENT_HOTKEY_ENTER_FACTORY_OSD);

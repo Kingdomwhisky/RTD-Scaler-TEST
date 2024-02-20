@@ -1,0 +1,47 @@
+;;==============================================
+;; Global setting
+;;==============================================
+;@INCLUDE("Kernel\Link\RL6463_Link.lin")
+
+BANKAREA(0x0000, 0xFFFF)
+PRINT(".\Output\RL6463_Project.m51")
+
+;;==============================================
+;; User autolink setting
+;;==============================================
+; for flash partition application
+;;;@if((_FLASH_PARTITION_TYPE != _FLASH_PARTITION_NONE) && (_CODE_DIGITAL_SIGNATURE_SUPPORT == _SIGNATURE_TYPE_OFF))
+;;    ;@if(_FLASH_PARTITION_TYPE == _FLASH_PARTITION_BOOT)
+;;        ;@BANK0(SYSMAIN)
+;;    ;@elif(_FLASH_PARTITION_TYPE == _FLASH_PARTITION_USER)
+;;        ;@if(_FLASH_PARTITION_RELOCATABLE_SUPPORT == _ON)
+;;            ;@BANK0(SYSMAIN, RTD2014USERBOOT)
+;;        ;@else
+;;            ;@BANK0()
+;;            ;@BANK1()
+;;            ;@BANK2()
+;;            ;@BANK3()
+;;            ;@BANK4()
+;;            ;@BANK5()
+;;            ;@BANK6()
+;;            ;@BANK7()
+;;            ;@BANK8()
+;;            ;@BANK9()
+;;            ;@BANK10()
+;;            ;@BANK11()
+;;            ;@BANK12()
+;;            ;@BANK13()
+;;            ;@BANK14()
+;;            ;@BANK15()
+;;            ;@BANK16(SYSMAIN, RTD2014USERBOOT)
+;;        ;@endif
+;;        ;@TABLE(?CO?RTD2014USERBOOT, 0xF8FE)
+;;    ;@endif
+;;
+;;    ;@FUNC(?PR?SYSMAINSTARTUSERCODE?SYSMAIN, 0x4000)
+;;;@endif
+
+
+;;==============================================
+;; Non-autolink setting
+;;==============================================
