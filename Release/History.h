@@ -32,3 +32,4 @@ SW Release Name: FW_UNITED_C23_V1.00T01_20240220
 
 Description:
 1. 用户OSD的Gamma选项增加了对应不同组数的名称，以字符串的形式显示[2.0 2.1 2.2 CIE USER1 USER2 DICOM]
+2. 源码重新上传（V1.2）,测试Git;

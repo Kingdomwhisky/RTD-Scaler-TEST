@@ -286,7 +286,7 @@ OPTFFF 9,235,1,0,0,0,0,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommon
 OPTFFF 9,236,1,0,0,0,0,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonFreeSync.c><ScalerCommonFreeSync.c> 
 OPTFFF 9,237,1,0,0,0,0,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonHDCP2.c><ScalerCommonHDCP2.c> 
 OPTFFF 9,238,1,0,0,0,0,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonIOSC.c><ScalerCommonIOSC.c> 
-OPTFFF 9,239,1,671088642,0,1884,1888,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonMcu.c><ScalerCommonMcu.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,124,3,0,0,6,1,0,0 }
+OPTFFF 9,239,1,671088640,0,1884,1888,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonMcu.c><ScalerCommonMcu.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,124,3,0,0,6,1,0,0 }
 OPTFFF 9,240,1,0,0,0,0,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonMeasure.c><ScalerCommonMeasure.c> 
 OPTFFF 9,241,1,0,0,0,0,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonNVRam.c><ScalerCommonNVRam.c> 
 OPTFFF 9,242,1,0,0,0,0,0,<.\Kernel\Scaler\ScalerCommonFunction\Code\ScalerCommonPLL.c><ScalerCommonPLL.c> 
@@ -730,7 +730,7 @@ OPTFFF 24,679,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserAd
 OPTFFF 24,680,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserAdjustRGBGamma.c><BeaconUserAdjustRGBGamma.c> 
 OPTFFF 24,681,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserAdjustUniformity.c><BeaconUserAdjustUniformity.c> 
 OPTFFF 24,682,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserBoot.c><BeaconUserBoot.c> 
-OPTFFF 24,683,1,771751936,0,1466,1481,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterface.c><BeaconUserInterface.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,63,5,0,0,121,1,0,0 }
+OPTFFF 24,683,1,16777218,0,1460,1471,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterface.c><BeaconUserInterface.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,63,5,0,0,121,1,0,0 }
 OPTFFF 24,684,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterfaceCec.c><BeaconUserInterfaceCec.c> 
 OPTFFF 24,685,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterfaceDimming.c><BeaconUserInterfaceDimming.c> 
 OPTFFF 24,686,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterfaceGlobalDimming.c><BeaconUserInterfaceGlobalDimming.c> 

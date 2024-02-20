@@ -730,7 +730,7 @@ OPTFFF 24,679,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserAd
 OPTFFF 24,680,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserAdjustRGBGamma.c><BeaconUserAdjustRGBGamma.c> 
 OPTFFF 24,681,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserAdjustUniformity.c><BeaconUserAdjustUniformity.c> 
 OPTFFF 24,682,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserBoot.c><BeaconUserBoot.c> 
-OPTFFF 24,683,1,16777218,0,1460,1471,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterface.c><BeaconUserInterface.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,63,5,0,0,121,1,0,0 }
+OPTFFF 24,683,1,16777216,0,1460,1471,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterface.c><BeaconUserInterface.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,63,5,0,0,121,1,0,0 }
 OPTFFF 24,684,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterfaceCec.c><BeaconUserInterfaceCec.c> 
 OPTFFF 24,685,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterfaceDimming.c><BeaconUserInterfaceDimming.c> 
 OPTFFF 24,686,1,0,0,0,0,0,<.\User\Beacon Series\BeaconFunction\Code\BeaconUserInterfaceGlobalDimming.c><BeaconUserInterfaceGlobalDimming.c> 
@@ -785,7 +785,7 @@ OPTFFF 30,734,1,0,0,0,0,0,<.\User\Device\Code\TypeC_Pmic_System_Solution.c><Type
 OPTFFF 30,735,1,0,0,0,0,0,<.\User\Device\Code\TypeC_Pmic_INTERSIL_RAA489800.c><TypeC_Pmic_INTERSIL_RAA489800.c> 
 OPTFFF 30,736,1,0,0,0,0,0,<.\User\Device\Code\TypeC_Pmic_SILERGY_SY8665.c><TypeC_Pmic_SILERGY_SY8665.c> 
 
-ExtF <E:\HEKUNWEI FILE\CODE2\RTD2785_UNITED_C23\UNITED_TYPICALOSDMZQ(KW1.0)\PCB\RL6432\LQFP_216\RL6432_UNITED_A_216PIN_1A1DP1DUALDVI_DPTX_LVDS_EDP.H> 828,831,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,124,3,0,0,6,1,0,0 }
+ExtF <E:\HEKUNWEI FILE\CODE2\RTD2785_UNITED_C23\UNITED_TYPICALOSDMZQ(KW1.0)\PCB\RL6432\LQFP_216\RL6432_UNITED_A_216PIN_1A1DP1DUALDVI_DPTX_LVDS_EDP.H> 828,830,0,{ 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,0,0,0,0,0,0,0,0,124,3,0,0,6,1,0,0 }
 
 TARGOPT 1, (RL6432_Beacon_Project)
  CLK51=33000000
